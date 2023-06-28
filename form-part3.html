@@ -15,7 +15,10 @@
         <content>
         <!--this is a form that will all send to a specific file to take it the backend developers and start to learn with this data-->
     <!--where this form info gonna send to it will send to Abrar.php to start the backend team working-->
-        <form action="Abrar.php">
+    <!--Query string parameter => name-->
+    <!--get => بيخلي البيانات تبان فوق-->
+    <!--post => مش بيخلي البيانات تظهر فوق-->
+        <form action="" method="post">
             <!--div block-->
             <div>
                 <!--help us to know what the field identifies-->
@@ -39,13 +42,47 @@
                 <label > password</label>
                 <!--we use value because this will help the backend to take user info and put it in database-->
                 <!--placeholder like hint in input field-->
+                <!--value for have a previous value in a field-->
                 <input required type="password" name="pass"  placeholder="password">
                 </div>
+                <br>
+
+<div>
+    <!--hidden for send some info-->
+<input required type="hidden" value="ssss">
+</div>
+<br>
+<div>
+    <!--help us to know what the field identifies-->
+    <label > Color</label>
+    <!--type color to choose a color-->
+    <input required type="color" name="col"  placeholder="color">
+    </div>
+    <br>
+    <div>
+        <label>Range</label>
+        <!--value our start-->
+    <input type="range" min="1" max="100" step="34"  value="50">
+    </div>
+    <br>
+    <div>
+        <label>number 1</label>
+        <input type="number" min="1" max="100" step="21">
+
+    </div>
+    <br>
+    <div>
+        <label>number 2</label>
+        <input type="number" >
+
+    </div>
+
                 <br>
                 <!--input element in line-->
                 <input type="submit" value="save">
                 <br>
                 <br>
+                <!--reset for all values-->
                 <input type="reset">
 
     </form>    
